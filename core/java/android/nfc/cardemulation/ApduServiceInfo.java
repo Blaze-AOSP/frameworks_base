@@ -79,7 +79,7 @@ public class ApduServiceInfo implements Parcelable {
      * Offhost reader name from manifest file.
      * Used for unsetOffHostSecureElement()
      */
-    final String mStaticOffHostName;
+    protected String mStaticOffHostName;
 
     /**
      * Mapping from category to static AID group
