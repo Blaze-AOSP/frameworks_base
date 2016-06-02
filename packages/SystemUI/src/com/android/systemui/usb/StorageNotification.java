@@ -397,8 +397,8 @@ public class StorageNotification extends SystemUI {
             if (disk.isUsb()) {
                 builder.setOngoing(true);
             }
-
-            if (disk.isAdoptable() || disk.isSd()) {
+            // Non-adoptable disks can't be snoozed.
+            if (disk.isAdoptable()) {
                 builder.setDeleteIntent(buildSnoozeIntent(vol.getFsUuid()));
             }
 
