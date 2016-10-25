@@ -31,4 +31,6 @@
     <!-- Add some extra spacing to all the buttons affected by TextAllCaps -->
     <item name="config_buttonTextLetterSpacing" format="float" type="dimen">0</item>
 
+    <!-- Whether notify fingerprint client of successful cancelled authentication -->
+    <bool name="config_notifyClientOnFingerprintCancelSuccess">false</bool>
 </resources>
