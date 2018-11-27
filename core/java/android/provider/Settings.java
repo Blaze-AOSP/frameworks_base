@@ -4678,6 +4678,17 @@ public final class Settings {
                BOOLEAN_VALIDATOR;
 
         /**
+         * Whether to show the kill app button in notification guts
+         * @hide
+         */
+        public static final String NOTIFICATION_GUTS_KILL_APP_BUTTON =
+                "notification_guts_kill_app_button";
+
+        /** @hide */
+        private static final Validator NOTIFICATION_GUTS_KILL_APP_BUTTON_VALIDATOR =
+                BOOLEAN_VALIDATOR;
+
+        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
@@ -4746,6 +4757,7 @@ public final class Settings {
 	    ANSWER_VOLUME_BUTTON_BEHAVIOR_ANSWER,
             VOLUME_ROCKER_WAKE,
             LOCK_SHOW_STATUS_BAR,
+            NOTIFICATION_GUTS_KILL_APP_BUTTON,
         };
 
         /**
@@ -4873,6 +4885,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(ANSWER_VOLUME_BUTTON_BEHAVIOR_ANSWER);
             PRIVATE_SETTINGS.add(VOLUME_ROCKER_WAKE);
             PRIVATE_SETTINGS.add(LOCK_SHOW_STATUS_BAR);
+            PRIVATE_SETTINGS.add(NOTIFICATION_GUTS_KILL_APP_BUTTON);
         }
 
         /**
@@ -4974,6 +4987,7 @@ public final class Settings {
             VALIDATORS.put(ANSWER_VOLUME_BUTTON_BEHAVIOR_ANSWER,ANSWER_VOLUME_BUTTON_BEHAVIOR_ANSWER_VALIDATOR);
             VALIDATORS.put(VOLUME_ROCKER_WAKE, VOLUME_ROCKER_WAKE_VALIDATOR);
             VALIDATORS.put(LOCK_SHOW_STATUS_BAR,LOCK_SHOW_STATUS_BAR_VALIDATOR);
+            VALIDATORS.put(NOTIFICATION_GUTS_KILL_APP_BUTTON, NOTIFICATION_GUTS_KILL_APP_BUTTON_VALIDATOR);
         }
 
         /**
