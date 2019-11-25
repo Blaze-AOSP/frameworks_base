@@ -123,6 +123,7 @@ public class CameraServiceProxy extends SystemService
 
     private final @NfcNotifyState int mNotifyNfc;
     private boolean mLastNfcPollState = true;
+    private final boolean mAllowMediaUid;
 
     /**
      * Structure to track camera usage
