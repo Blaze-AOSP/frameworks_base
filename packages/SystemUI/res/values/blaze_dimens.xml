@@ -20,4 +20,9 @@
 	<!-- Sets a custom extra padding for the QS icons and statusbar date -->
 	<dimen name="qs_items_padding">0dp</dimen>
 
+        <!-- Old style mobile data indicators -->
+        <dimen name="status_bar_mobile_signal_with_type_width">22dp</dimen>
+        <dimen name="status_bar_mobile_signal_width">16dp</dimen>
+        <dimen name="status_bar_mobile_type_height">10dp</dimen>
+
 </resources>
